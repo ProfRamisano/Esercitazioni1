@@ -1,0 +1,144 @@
+\UseRawInputEncoding
+\chapter{Calcolo combinatorio}
+
+
+\begin{esercizio}
+Quanti sono i numeri naturali formati da quattro cifre tutte distinte tra loro?
+\end{esercizio}
+\textit{Soluzione.} Occorre contare quanti numeri iniziano con una qualsiasi cifra diversa da zero e non hanno cifre ripetute:
+\[
+N=9\cdot 9\cdot 8\cdot 7=9\cdot D_{9,3}
+\]
+
+\begin{esercizio}
+	Quante colonne si devono compilare per essere certi di fare $13$ al totocalcio?
+\end{esercizio}
+\textit{Soluzione.} Le $13$ colonne vengono compilate inserendo, con ripetizione, i tre simboli disponibili. Il numero di colonne è quindi uguale al numero di disposizioni con ripetizione:  
+\[
+D'_{13,3}=3^{13}
+\] 
+
+\begin{esercizio}
+	Quanti interi compresi fra $100$ e $1000$ si possono comporre con le cifre: $2,4,7,8$?
+\end{esercizio}
+\textit{Soluzione.} Si osserva che i numeri richiesti sono formati da tre cifre, anche ripetute, e che non si pone il problema di escludere lo zero per la cifra delle centinaia: 
+\[
+D'_{4,3}=4^3
+\]
+
+\begin{esercizio}
+	Quante combinazioni si possono ottenere nel lancio di due dati?
+\end{esercizio}
+\textit{Soluzione.} Si tratta del numero di combinazioni con ripetizioni: 
+\[
+C'_{6,2}=C_{6+1, 2}={7\choose 2}=21
+\]
+
+\begin{esercizio}
+	Quanti anagrammi si possono formare rispettivamente con le parole \textit{studiare} e con \textit{esponente}?
+\end{esercizio}
+\textit{Soluzione.} Le lettere della parola \textit{studiare} non sono ripetute. Il numero di anagrammi è uguale a quello delle permutazioni semplici: 
+\[
+P_{8}=8!
+\]
+Nella parola \textit{anagrammi}, alcune lettere si ripetono. Occorre quindi considerare il numero di permutazioni con ripetizione. 
+\[
+P'_{3,2,1,1,1,1}=\frac{9!}{3! \, 2!}
+\]
+
+\begin{esercizio}
+	Sviluppare il seguente binomio:
+	\[
+	\Big (\sqrt{x}-\frac{1}{2} \, y\Big )^5
+	\]
+\end{esercizio}
+\textit{Soluzione.} 
+\begin{align*}
+	\Big (\sqrt{x}-\frac{1}{2}\, y\Big )^5
+	&=\sum_{k=0}^5 {5\choose k} \big (\sqrt{x}\big )^k \cdot \Big (\frac{-y}{2}\Big )^{5-k}\\
+	&=x^2\sqrt{x}-\frac{5}{2} \, x^2y+\frac{5}{2} \, x \sqrt{x} \, y^2-\frac{5}{4} \, xy^3+\frac{5}{16} \, \sqrt{x} \, y^4-\frac{1}{32} \, y^5
+\end{align*}
+
+\begin{esercizio}
+	Calcolare il coefficiente del termine in $x^2y^2$ nel seguente binomio: 
+	\[
+	\Big (\frac{y}{x}+\sqrt{x}\Big )^{10}
+	\]
+\end{esercizio}
+\textit{Soluzione.} Il termine $k$-esimo risulta:
+\[
+{10\choose k} \, \Big (\frac{y}{x}\Big )^k \, \big (\sqrt{x}\big )^{10-k}
+\quad \Rightarrow \quad 
+{10 \choose k} \, \frac{y^k}{x^k} \cdot x^{(10-k)/2}=
+{10 \choose k} \, y^k \cdot x^{(10-3k)/2}
+\]
+Confrontando le potenze di $x$ e di $y$:
+\[
+\begin{cases}
+	\dfrac{10-3k}{2}=2 \\[6pt]
+	k=2	
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	10-6=4
+	\\
+	k=2
+\end{cases}
+\Rightarrow \quad 
+k=2
+\]
+
+\begin{esercizio}
+	Calcolare il coefficiente del termine indipendente da $x$ del termine in $x^2y^2$ nel binomio: 
+	\[
+	\Big (\frac{y}{x}+\sqrt{x}\Big )^{10}
+	\]
+\end{esercizio}
+\textit{Soluzione.} Il termine $k$-esimo risulta:
+\[
+{10\choose k} \, \Big (\frac{y}{x}\Big )^k \, \big (\sqrt{x}\big )^{10-k}
+\quad \Rightarrow \quad 
+{10 \choose k} \, \frac{y^k}{x^k} \cdot x^{(10-k)/2}=
+{10 \choose k} \, y^k \cdot x^{(10-3k)/2}
+\]
+Il termine indipendente da $x$ soddisfa la relazione: 
+\[
+\frac{10-3k}{2}=0 \quad \Rightarrow \quad 
+k=\frac{10}{3}
+\]
+Il valore di $k$ non è accettabile in quanto $k$ deve essere intero. 
+
+\begin{esercizio}
+	Dimostrare le seguenti uguaglianze:
+	\[
+		\sum_{k=0}^n {n\choose k}=2^n
+		\qquad \quad 
+		\sum_{k=0}^n (-1)^k {n\choose k}=0
+	\]
+\end{esercizio}
+\textit{Soluzione.} 
+\begin{itemize}
+	\item Si applica il binomio di Newton ponendo $a=b=1$:
+	\[
+	(1+1)^n=\sum_{k=0}^n {n\choose k} 1^k \cdot 1^{n-k}=\sum_{k=0}^n {n\choose k} 	
+	\quad \Rightarrow \quad 
+	\sum_{k=0}^n {n\choose k}=2^n
+	\]
+	\item Si applica il binomio di Newton ponendo $a=1$ e $b=-1$:
+	\[
+	\big (1+(-1)\big )^n=\sum_{k=0}^n {n\choose k} (-1)^k \cdot 1^{n-k}=\sum_{k=0}^n {n\choose k} (-1)^k
+	\quad \Rightarrow \quad 
+	\sum_{k=0}^n (-1)^k \, {n\choose k}=0 
+	\]
+	Dallo sviluppo precedente si deduce che la somma dei coefficienti di indice pari è uguale allo somma di quelli con indice dispari: 
+	\[
+	{n\choose 0}+{n\choose 2}+{n\choose 4}+\dots
+	={n\choose 1}+{n\choose 3}+{n\choose 5}+\dots
+	\]
+	Da cui: 
+	\[
+	{n\choose 0}+{n\choose 2}+{n\choose 4}+\dots
+	={n\choose 1}+{n\choose 3}+{n\choose 5}+\dots
+	=\frac{2^n}{2}=2^{n-1}
+	\]
+\end{itemize}
