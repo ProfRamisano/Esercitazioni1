@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.10.5)  8 DEC 2025 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.10.5)  8 DEC 2025 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1431,7 +1431,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 
  []
 
-<esermate.jpg, id=34, 1204.5pt x 803.0pt>
+<esermate.jpg, id=38, 1204.5pt x 803.0pt>
 File: esermate.jpg Graphic file (type jpg)
 <use esermate.jpg>
 Package pdftex.def Info: esermate.jpg  used on input line 125.
@@ -1484,34 +1484,50 @@ File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 
 [5]
 
-[6])
+[6]) (reali.tex
 
-[7] (eserciziario.aux)
+[7]
+
+[8
+
+]
+Capitolo 2.
+
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 127--131
+
+ []
+
+)
+
+[10] (eserciziario.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `eserciziario.out' has not changed.
-(rerunfilecheck)             Checksum: 0647BB98E01A84E768E3DB0874421105;151.
+(rerunfilecheck)             Checksum: 1B5BCB7C815C5536D3AEFD0CB9EBC2D9;257.
  ) 
 Here is how much of TeX's memory you used:
- 40928 strings out of 473682
- 901720 string characters out of 5728928
+ 40949 strings out of 473682
+ 902035 string characters out of 5728928
  1416172 words of memory out of 5000000
- 63363 multiletter control sequences out of 15000+600000
+ 63371 multiletter control sequences out of 15000+600000
  642316 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,107p,1671b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,15n,107p,1671b,1167s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/fourier/fourier-bb.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX/fonts/type1/adobe/
-utopia/putb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/
-MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on eserciziario.pdf (7 pages, 198761 bytes).
+m Files/MiKTeX/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/fourier/fourier-mlit.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX/fonts/type1/adobe/utopia/putb
+8a.pfb><C:/Program Files/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX/font
+s/type1/adobe/utopia/putri8a.pfb>
+Output written on eserciziario.pdf (10 pages, 212801 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
