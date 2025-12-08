@@ -1,0 +1,444 @@
+\UseRawInputEncoding
+\chapter{Matematica elementare}
+
+
+\begin{esercizio}
+	Risolvere la seguente disequazione: 
+	\[
+	|x^2-5x+6|=x^2-3
+	\]
+\end{esercizio}
+\textit{Soluzione.} L'equazione è equivalente alla coppia di sistemi, ottenuti studiando il segno dell'argomento del valore assoluto: 
+\[
+\begin{cases}
+	x^2-5x+6\geq 0\\
+	x^2-5x+6=x^2-3
+\end{cases}
+\quad \vee \qquad 
+\begin{cases}
+	x^2-5x+6<0\\
+	-x^2+5x-6=x^2-3
+\end{cases} 
+\]
+\begin{itemize}
+	\item Si risolve il primo sistema:
+	\[
+	\begin{cases}
+		x\leq 2 \, \, \, \vee \, \, \, x\geq 3\\
+		x=9/5
+	\end{cases}
+	\Rightarrow \quad 
+	S_1=\big \{9/5\big \}
+	\]
+	\item Si risolve il secondo sistema: 
+	\[
+	\begin{cases}
+		2<x<3\\
+		x=1 \, \, \, \vee \, \, \, x=3/2
+	\end{cases}
+	\Rightarrow \quad 
+	S_2=\emptyset
+	\]
+\end{itemize}
+L'equazione ammette quindi la sola soluzione $9/5$. 
+\begin{esercizio}
+	Risolvere la seguente disequazione: 
+	\[
+	|x-2|=x-3
+	\]
+\end{esercizio}
+\textit{Soluzione}. Anziché studiare il comportamento del valore assoluto, si osserva che il secondo membro eredita la proprietà di non-negatività. \' E quindi possibile elevare entrambi i membri al quadrato: 
+\[
+\begin{cases}
+	x-3\geq 0\\
+	(x-2)^2=(x-3)^2
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	x\geq 3\\
+	2x=5
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	x=5/2\\
+	x\geq 3
+\end{cases}
+\Rightarrow \quad 
+S=\emptyset
+\]
+
+\begin{esercizio}
+	Risolvere l'equazione: 
+	\[
+	x^3+(x-\sqrt{3})^3=0
+	\]
+\end{esercizio}
+\textit{Soluzione}. L'equazione si riconduce alla forma:
+\[
+x^3=-(x-\sqrt{3})^3=0 \quad \Rightarrow \quad 
+x^3=(\sqrt{3}-x)^3
+\] 
+\' E possibile estrarre le radici cubiche di entrambi i membri:
+\[
+x=\sqrt{3}-x
+ \quad \Rightarrow \quad 
+ x=\frac{\sqrt{3}}{2}
+\]
+
+\begin{esercizio}
+	Risolvere la seguente disequazione:
+	\[
+	(x+3)^3(4-x^2)^4(-x^2+6x-5)^5\geq 0
+	\]
+\end{esercizio}
+\textit{Soluzione}. \ \begin{itemize} 
+	\item Si osserva che $(4-x^2)^4$ è non negativo e che $x=\pm 2$ sono soluzioni. \\
+	Posto $x=\pm 2$ soluzioni, è quindi possibile semplificare il fattore senza alterare il segno. 
+	\item Il segno di $(x+3)^3$ è lo stesso di quello di $x+3$.
+	\item Il segno di $(-x^2+6x-5)^5$ è lo stesso di quello di $-x^2+6x-5$. 
+\end{itemize}
+La disequazione è quindi equivalente alla seguente: 
+\[
+x=\pm 2 \, \, \, \vee \, \, \, (x+3)(-x^2+6x-5)\geq 0
+\]
+Studiando il segno dei fattori si deduce l'insieme soluzione: 
+\[
+x\leq -3 \, \, \, \vee \, \, \, x=-2 \, \, \, \vee \, \, \, 1\leq x\leq 5
+\]
+
+\begin{esercizio}
+	Risolvere la disequazione: 
+	\[
+	\frac{1}{(x-1)^3}\leq -\frac{1}{x^3}
+	\]
+\end{esercizio}
+\textit{Soluzione}. Si osserva che è errato passare a reciproco entrambi i membri perché ciò sarebbe falso nel caso in cui i due membri hanno segno opposto. 
+\' E invece possibile estrarre la radice di entrambi i membri: 
+\[
+\frac{1}{x-1}\leq -\frac{1}{x}
+\quad \Rightarrow \quad 
+\frac{2x-1}{x(x-1)}\leq 0
+\quad \Rightarrow \quad
+x<0  \quad \Rightarrow \quad 
+\frac{1}{2}\leq x<1
+\]
+
+\begin{esercizio}
+	Risolvere la seguente disequazione:
+	\[
+\frac{x^2+4x+2}{x+1}>\sqrt{x^2}	
+	\]
+\end{esercizio}
+\textit{Soluzione}. Si osserva che $\sqrt{x^2}=|x|$. \\
+La disequazione viene quindi risolta studiando il comportamento del valore assoluto:
+\[
+\begin{cases}
+	x\geq 0\\[6pt]
+	\dfrac{x^2+4x+2}{x+1}>x
+\end{cases}
+\quad \vee \qquad 
+\begin{cases}
+	x<0\\[6pt]
+	\dfrac{x^2+4x+2}{x+1}>-x
+\end{cases}
+\]
+\begin{itemize}
+	\item Si risolve il primo sistema:
+	\[
+	\begin{cases}
+		x\geq 0\\[6pt]
+		\dfrac{3x+2}{x+1}>0
+	\end{cases}
+	\quad \Rightarrow \quad 
+	S_1: \, x\geq 0
+	\]
+	Infatti, sotto la condizione $x\geq 0$, sia il numeratore sia il denominatore sono positivi. 
+	\item Si risolve il secondo sistema: 
+	\[
+	\begin{cases}
+		x<0\\[6pt]
+		\dfrac{2x^2+5x+4}{x+1}>0
+	\end{cases}
+	\Rightarrow \quad 
+	S_1: \, -2<x<-1 \, \, \, \vee \, \, \, -\frac{1}{2}<x\leq 0
+	\] 
+	Unendo le soluzioni: 
+	\[
+	S=S_1\cup S_2: \, \, -2<x<-1 \, \, \, \vee \, \, \, x>-\frac{1}{2}
+	\]
+\end{itemize}
+
+\begin{esercizio}\label{equazrazionale}
+	Mostrare che se un numero razionale $\overline{x}=p/q$, con $p\in \mathbb{Z}$, $q\in \mathbb{N}^*$ e $p,q$ primo tra loro) è soluzione dell'equazione algebrica: 
+	\[
+	p(x)=\sum_{i=0}^n a_i x_i=0
+	\]
+	allora $p$ è divisore del termine noto $a_0$ mentre $q$ è divisore del coefficiente direttore $a_n$. 
+\end{esercizio}
+\textit{Soluzione}. Per ipotesi, $\overline{x}$ è soluzione dell'equazione $p(x)=0$:
+\[
+	p(\overline{x})=0 
+	\quad \Rightarrow \quad 
+	a_n \, \frac{p^n}{q^n}+a_{n-1} \, \frac{p^{n-1}}{q^{n-1}}+\dots+a_1 \, \frac{p}{q}+a_0=0
+\]
+Essendo $q\neq 0$, si moltiplica per $q^n$:
+\[
+a_n p^n+a_{n-1} \, p^{n-1}q+\dots+a_1pq^{n-1}+a_0q^n=0 \]
+\begin{itemize}
+	\item Si evidenzia un fattore $p$:
+	\[
+	p \, \big (a_n p^{n-1}+\dots +a_1q^{n-1}\big )=-a_0q^n 
+	\]
+	Siccome $p$ divide $a_0q^n$ e $p$ è primo con $q$, si ha che $p$ divide $a_0$.
+	\item Si evidenzia un fattore $q$:
+	\[
+	q \, (a_0q^{n-1}+a_1pq^{n-2}+\dots+a_{n-1}p^{n-1}=-a_np^n
+	\]
+	Siccome $q$ divide $a_n p^n$ e $q$ è primo con $p$, si ha che $q$ divide $a_n$. 
+\end{itemize}
+Si osserva che la condizione di divisibilità è necessaria affinché $\overline{n}\in \mathbb{Q}$ sia soluzione. Quindi se tale condizione non è soddisfatta allora $\overline{x}\in \mathbb{Q}$ non è soluzione dell'equazione.\\
+Segue inoltre che gli zeri razionali di un polinomio sono del tipo $\pm a/b$, dove $a$ è un divisore del termine noto e $b$ è un divisore del coefficiente direttore. \\
+Per esempio, gli zeri razionali del polinomio $p(x)=2x^3-13x^2+18x-6$ si ricercano tra i seguenti: 
+\[
+\pm 1 \qquad \pm 2 \qquad \pm 3 \qquad \pm 6 \qquad \pm \frac{1}{2} \qquad \pm \frac{3}{2}
+\]
+
+\begin{esercizio}
+	Risolvere la seguente disequazione: 
+	\[
+	2^x>2+2^{-x}
+	\]
+\end{esercizio}
+\textit{Soluzione}. Si porta la disequazione in forma normale: 
+\[
+2^{2x}-2\cdot 2^x-1>0
+\]
+Posto $2^x=t$, l'equazione associata è riconducibile a una forma di secondo grado: 
+\[
+t^2-2t-1=0 
+\quad \Rightarrow \quad 
+t=1\pm \sqrt{2}
+\]
+Da cui fattorizzando:
+\begin{align*}
+&\big (2^x-(1-\sqrt{2})\big ) \, \big (2^x-(1+\sqrt{2})\big )>0
+\quad \Rightarrow \quad 
+\big (2^x+\sqrt{2}-1)\big ) \, \big (2^x-(1+\sqrt{2})\big )>0\\
+\end{align*}
+Il primo fattore è positivo: 
+\[
+2^x-(1+\sqrt{2})>0 \quad \Rightarrow \quad 
+2^x>1+\sqrt{2}
+\quad \Rightarrow \quad 
+x>\log_2 (1+\sqrt{2})
+\]
+
+\begin{esercizio}
+	Risolvere la seguente equazione: 
+	\[
+	\sin x-\cos x=1
+	\]
+\end{esercizio}
+\textit{Soluzione}. L'equazione si può risolvere applicando le formule di addizione oppure il metodo dell'angolo aggiunto. 
+Facendo uso delle formule parametriche, posto $t=\tan (x/2)$:
+\[
+\frac{x}{2}\neq \frac{\pi}{2}+k\pi 
+\quad \Rightarrow \quad 
+x\neq \pi +k2\pi 
+\]
+Si osserva che $x=\pi +k2\pi$ è soluzione. Posto $x\neq \pi +k2\pi$:
+\[
+\sin x-\cos x=1
+\quad \Rightarrow \quad 
+\frac{2t}{1+t^2}+\frac{1-t^2}{1+t^2}=1
+\quad \Rightarrow \quad 
+\frac{2t+1-t^2}{1+t^2}=1
+\quad \Rightarrow \quad 
+t=1
+\]
+Si ha: 
+\[
+t=\tan \frac{x}{2}=1
+\quad \Rightarrow \quad 
+\frac{x}{2}=\frac{\pi}{4}+k\pi 
+\quad \Rightarrow \quad 
+x=\frac{\pi}{2}+k2\pi 
+\]
+L'equazione ammette quindi le seguenti soluzioni: 
+\[
+x=\frac{\pi}{2}+k2\pi \, \, \, \vee \, \, \, x=\pi +k2\pi 
+\]
+
+\begin{esercizio}
+	Risolvere, nell'intervallo $(-2\pi, 2\pi )$ la seguente disequazione: 
+	\[
+	\sin 2x>\cos x
+	\]
+\end{esercizio}
+\textit{Soluzione}. 
+\[
+2\sin x \cos x-\cos x>0 \quad \Rightarrow \quad 
+\cos x \, (2\sin x-1)>0
+\]
+Anziché studiare il segno dei fattori, si può procedere per casi: 
+\[
+\begin{cases}
+	\cos x>0\\
+	2\sin x-1>0
+	\end{cases} \quad \vee \qquad 
+	\begin{cases}
+		\cos x<0\\
+		2\sin x-1<0
+	\end{cases}
+\]
+Da cui le soluzioni: 
+\[
+-\frac{11}{6} \, \pi <x<-\frac{3}{2} \, \pi \quad \vee \quad 
+-\frac{7}{6} \, \pi <x<-\frac{\pi}{2}
+ \quad \vee \quad 
+\frac{\pi}{6}<x<\frac{\pi}{2}
+ \quad \vee \quad 
+ \frac{5}{6} \, \pi <x<\frac{3}{2} \, \pi 
+\]
+
+\begin{esercizio}
+	Risolvere l'equazione: 
+	\[
+	\sqrt{2\log_2 x+3}=\log_2 x
+	\]
+\end{esercizio}
+\textit{Soluzione}. 
+\[
+\begin{cases}
+x>0\\
+\log_2 x>0\\
+2\log_2 x+3\geq 0\\
+2\log_2 x+3=\log_2^2 x
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	x>0\\
+	\log_2 x>0\\
+	\log_2^2 x-2\log_2 x-3=0
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	x>0\\
+	\log_2 x>0\\
+	\log_2 x=-1 \, \, \, \vee \, \, \, \log_2 x=3
+\end{cases}
+\]
+Da cui: 
+\[
+\log_2 x=3 \quad \Rightarrow \quad 
+x=8
+\]
+
+
+\begin{esercizio}
+	Risolvere la disequazione: 
+	\[
+	\sqrt{2\log_2 x+3}>\log_2 x
+	\]
+\end{esercizio}
+\textit{Soluzione}. 
+\[
+\begin{cases}
+	x>0\\
+	\log_2 x<0\\
+	2\log_2 x+3\geq 0
+\end{cases}
+\qquad \begin{cases}
+	x>0\\
+	\log_2 x\geq 0\\
+	2\log_2 x+3\geq \log_2^2 x\\
+\end{cases}
+\]
+I due sistemi ammettono rispettivamente i seguenti insiemi soluzione: 
+\[
+\frac{1}{2\sqrt{2}}\leq x<1 \qquad \qquad 1\leq x<2^3
+\]
+Da cui la soluzione della disequazione: 
+\[
+\frac{1}{2\sqrt{2}}\leq x<8
+\]
+
+\begin{esercizio}
+	Risolvere la seguente equazione: 
+	\[
+	2\sqrt[3]{(e^x-1)^2}-e^x=0
+	\]
+\end{esercizio}
+\textit{Soluzione}. \' E possibile elevare al cubo entrambi i membri: 
+\[
+8 \, (e^x-1)^2=e^{3x} \quad \Rightarrow \quad 
+e^{3x}-8e^{2x}+16e^x+8=0
+\]
+Fattorizzando:
+\[
+(e^x-2)(e^{2x}-6e^x+4)=0
+\quad \Rightarrow \quad 
+x=\ln 2 \, \, \, \vee \, \, \, x=\ln (3\pm \sqrt{5})
+\]
+
+\begin{esercizio}
+	Determinare le soluzioni positive della seguente equazione: 
+	\[
+	(1+x) \, \sqrt{x^2+2x}=2\sqrt{3}
+	\]
+\end{esercizio}
+\textit{Soluzione}. Siccome, per ipotesi, $x>0$ la radice è definita ed entrambi i membri sono positivi. \' E quindi possibile elevare entrambi i membri al quadrato senza introdurre radici positive estranee:
+\[
+(1+x)^2 \, (x^2+2x)=12
+\quad \Rightarrow \quad 
+x^4+4x^3+5x^2+2x-12=0
+\quad \Rightarrow \quad 
+(x-1)(x^3+5x^2+10x+12)=0
+\]
+Essendo $x>0$, il secondo fattore è positivo. Si conclude che $x=1$ è l'unica soluzione positiva. 
+
+\begin{esercizio}
+	Risolvere la disequazione: 
+	\[
+	\sqrt{\sin x}\leq 1-\cos x
+	\]
+\end{esercizio}
+\textit{Soluzione}. Il secondo membro è non negativo. Dopo aver posto la condizione di esistenza del radicale, è possibile elevare entrambi i membri al quadrato: 
+\[
+\begin{cases} 
+\sin x\geq 0\\
+(1-\cos x)^2\geq \sin x
+\end{cases} 
+\]
+Tenendo presente che $\sin x\geq 0$, si può esprimere in maniera univoca $\sin x$ in funzione di $\cos x$:
+\[
+\sin x\geq 0 \quad \Rightarrow \quad 
+\sin x=\sqrt{1-\cos^2 x}
+\quad \Rightarrow \quad 
+\begin{cases}
+\sin x\geq 0\\
+(1-\cos x)^2\geq \sqrt{1-\cos^2 x}
+\end{cases}
+\]
+\' E possibile elevare al quadrato: 
+\[
+(1-\cos x)^4\geq 1-\cos2 x \quad \Rightarrow \quad 
+(1-\cos x)^4=(1-\cos x)(1+\cos x)
+\]
+Dopo aver osservato che $x=k2\pi $ è soluzione: 
+\[
+(1-\cos x)^3=1+\cos x
+\quad \Rightarrow \quad 
+\cos^3x-3\cos^2 x+4\cos x\leq 0
+\quad \Rightarrow \quad 
+\cos x \, (\cos^2 x-3\cos x+4)\leq 0
+\]
+Siccome il trinomio è ovunque positivo, la disequazione si riduce alla forma seguente: 
+\[
+\begin{cases} 
+	\sin x\geq 0\\
+	\cos x\leq 0
+	\end{cases} 
+\Rightarrow \quad 
+S: \, \frac{\pi}{2}+k2\pi <x<\pi+k2\pi \quad \vee \quad x=k2\pi 
+\]
