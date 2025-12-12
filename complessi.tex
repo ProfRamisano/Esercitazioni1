@@ -1,0 +1,137 @@
+\UseRawInputEncoding
+\chapter{Numeri reali}
+
+
+\begin{esercizio}
+Motivare per quale motivo le seguenti scritture sono prive di significato: 
+\[
+\log_1 7 \qquad \big (\log_{1/2} 3\big )^\pi  \qquad 
+\]
+\end{esercizio}
+\textit{Soluzione.} 
+\begin{itemize}
+	\item Soltanto $\log_1 1$ è una forma definita, anche se uguale a qualsiasi $k$ reale in quanto è vera:
+	\[\log_1 1=k \quad \Leftrightarrow \quad 
+	1^k=1 \qquad \forall \, k 
+	\]
+	\item Le potenze con esponente irrazionale sono definite soltanto se la base è positiva. 
+\end{itemize}
+
+\begin{esercizio}
+	Stabilire per quali valori reali di $\lambda$ è definita, nel campo reale, l'espressione: 
+	\[
+	\mu=\log_{\lambda^2-2\lambda} \big (\log_3 \lambda)
+	\]
+\end{esercizio}
+\textit{Soluzione}. Si osserva che, nel caso in cui la base è uguale a $1$, sono ammissibili soltanto i valori di $\lambda$ per cui anche l'argomento è uguale a $1$. Si osserva che ciò non accade: 
+\[
+\begin{cases} 
+	\lambda^2-2\lambda=1\\
+\log_3 \lambda=1
+\end{cases} 
+\Rightarrow \quad 
+\begin{cases}
+		\lambda^2-2\lambda\big |_{\lambda=3}\neq 1\\
+	\lambda=3
+\end{cases}
+\]
+Segue che la base deve essere diversa da $1$. Inoltre 
+argomenti e basi dei logaritmi devono essere positivi:
+\[
+\begin{cases} 
+\lambda>0\\
+\log_3 \lambda>0\\
+\lambda^2-2\lambda>0\\
+\lambda^2-2\lambda\neq 1
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	\lambda>2\\
+	\lambda\neq 1+\sqrt{2}
+\end{cases}
+\]
+
+\begin{esercizio}
+	Stabilire per quali valori di $x$ è reale il seguente numero $\alpha$:
+	\[
+	\alpha=(x-1)^{x-2}
+	\]
+\end{esercizio}
+\textit{Soluzione}. Si procede per casi: 
+\begin{itemize}
+	\item Se $x>1$ allora $\alpha$ è reale. 
+	\item Se $x=1$ allora si ha $\alpha=0^{-1}$, scrittura priva di significato.
+	\item Se $x<1$:
+	\begin{itemize}
+		\item L'operazione non è definita per $x$ irrazionale.
+		\item Se l'esponente è razionale allora $\alpha$ è reale se $x-2$ è un numero razionale con denominatore dispari ($\alpha$ è un radicale di indice dispari).  
+	\end{itemize} 
+\end{itemize}
+
+\begin{esercizio}
+	Stabilire se l'insieme dei numeri irrazionali è chiuso rispetto alle usuali operazioni di addizione e moltiplicazione. 
+\end{esercizio}
+\textit{Soluzione}. L'insieme degli irrazionali non è chiuso né rispetto alla somma né rispetto al prodotto.  \' E quindi sufficiente giustificare l'affermazione fornendo dei controesempi: 
+\begin{align*}
+	&\begin{cases} 
+		\alpha=\sqrt{2}\in \mathcal{I}\\
+		\beta=2-\sqrt{2}\in \mathcal{I}
+		\end{cases} \Rightarrow \quad 
+	\alpha+\beta=2\not \in \mathcal{I}
+		&\begin{cases}
+		\alpha=\sqrt{2}\in \mathcal{I}\\
+		\beta=\sqrt{8}\in \mathcal{I}
+	\end{cases}
+	\Rightarrow \quad 
+	\alpha\cdot \beta=4\not \in \mathcal{I}
+\end{align*}
+
+\begin{esercizio}
+	Dimostrare che $\sin \frac{\pi}{18}$ è irrazionale. 
+\end{esercizio}
+\textit{Soluzione}. Si sfrutta una identità goniometrica relativa a $\sin(3x)$:
+\begin{align*}
+	\sin 3x&=\sin (2x+x)=\sin 2x\cos x+\cos 2x\sin x\\
+	&=2\sin x\, (1-\sin^2 x) +(1-2\sin^2 x)\, \sin x
+	=3\sin x-4\sin^3 x
+\end{align*}
+Posto $x=\pi/18$:
+\[
+3x=\frac{\pi}{6} 
+\quad \Rightarrow \quad 
+\sin \frac{\pi}{6}=3\sin \frac{\pi}{18}-4\sin^3 \frac{\pi}{18}
+\]
+Posto inoltre $S=\sin \frac{\pi}{18}$:
+\[
+\frac{1}{2}=3S-4S^3 \quad \Rightarrow \quad 
+8S^3-6S+1=0
+\]
+Per la proprietà dimostrata nell'esercizio \ref{equazrazionale}, una soluzione $S$ razionale sarebbe  del tipo: 
+\[
+\pm 1 \qquad \pm \frac{1}{2} \qquad \pm \frac{1}{4} \qquad \pm \frac{1}{8}
+\]
+Siccome l'equazione è di grado dispari e a coefficienti reali, esiste una soluzione reale. 
+Siccome nessuno dei precedenti valori è soluzione, la soluzione $S$ è irrazionale. 
+Si conclude che $\sin \frac{\pi}{18}$ è irrazionale. 
+
+\begin{esercizio}
+	Dimostrare che $\log_{10} 2$ è irrazionale. 
+\end{esercizio}
+\textit{Soluzione}. Per assurdo, se fosse razionale, esisterebbero gli interi $p,q$ primi tra loro, con $q\neq 0$:
+\[
+\log_{10} 2=\frac{p}{q} 
+\quad \Rightarrow \quad 
+2=10^{p/q} 
+\quad \Rightarrow \quad 
+2^q=10^p=2^p\cdot 5^p
+\]
+Da cui un assurdo in quanto si contraddice l'unicità della scomposizione in fattori primi. \\
+\newline
+Si osserva che se $\log_{10} \alpha$ è razionale allora $\alpha$ è una potenza di $10$:
+\[
+\log_{10} \alpha=\frac{p}{q} \quad \Rightarrow \quad 
+\alpha=10^{p/q} \quad \Rightarrow \quad 
+\alpha^q=10^p
+\]
+
+%FINE
