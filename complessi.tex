@@ -1,0 +1,405 @@
+\UseRawInputEncoding
+\chapter{Numeri complessi}
+
+
+\begin{esercizio}
+Data l'equazione: 
+\[
+P(z)=z^2+\lambda z-3 (1+2i)=0
+\]
+Determinare il valore di $\lambda\in \mathbb{C}$ tale che $z_1=2-i$ sia radice dell'equazione. \\
+Calcolare inoltre, per tale valore di $\lambda$, anche l'altra radice dell'equazione data. 
+\end{esercizio}
+\textit{Soluzione.} Essendo radice, $z_1$ soddisfa l'equazione: 
+\[
+(2-i)^2+\lambda \, (2-i)-3(1+2i)=0
+\quad \Rightarrow \quad 
+\lambda=\frac{10i}{2-i}=2 \, (-1+2i)
+\] 
+La seconda radice si ottiene osservando che è nota la somma delle soluzioni dell'equazione: 
+\[
+z_1+z_2=-\lambda
+\quad \Rightarrow \quad 
+z_2=-\lambda-z_1=-2 \, (-1+2i)-(2-i)=-3i
+\]
+
+\begin{esercizio}
+	Individuare sul piano di Gauss il luogo $\Gamma$ dei punti immagine dei complessi per i quali la seguente funzione assume valori reali:
+	\[
+	w(z)=i \, |z|^2+2z
+	\]
+\end{esercizio}
+\textit{Soluzione.} Posto $z=x+iy$:
+\[
+w(z)=i \, (x^2+y^2)+2(x+iy)=2z+i \, (x^2+y^2+2y)
+\]
+Da cui: 
+\[
+\Gamma: \, x^2+y^2+2y=0
+\]
+Si tratta di una circonferenza di centro $(0,-1)$ e raggio $R=1$. 
+
+\begin{esercizio}
+	Determinare i complessi $z$ immaginari puri che verificano l'uguaglianza:
+	\[
+	|z-i|=|z+2|
+	\]
+\end{esercizio}
+\textit{Soluzione.} \' E possibile interpretare geometricamente l'uguaglianza in termini di distanze. 
+\begin{itemize}
+	\item $|z+2|$ rappresenta la distanza dei punti $P$ da $A(-2,0)$
+	\item $|z-i|$ rappresenta la distanza dei punti $P$ da $B(0,1)$
+\end{itemize}
+L'uguaglianza è il luogo dei punti $P(x,y)$ equidistanti da $(0,1)$ e da $(-2,0)$. 
+\begin{figure}[h!!]
+	\centering
+	\includegraphics[scale=0.3]{assecomplessi1.PNG}
+	\end{figure}
+La soluzione del problema è il punto $P$ di intersezione tra l'asse del segmento $AB$ e l'asse delle ordinate. Le intersezioni possono essere dedotte con metodi di geometria analitica oppure algebricamente.\\
+\newline
+Sia $z=iy$ immaginario puro:
+\begin{align*}
+|z-i|=|z+2| \quad \Rightarrow \quad 
+|iy-i|=|2+iy| \quad \Rightarrow \quad 
+|i(y-1)|=|2+iy|
+\end{align*}
+Si ha: 
+\[
+(y-1)^2=4+y^2 \quad \Rightarrow \quad 
+y=-\frac{3}{2}
+\]
+
+\begin{esercizio}
+	Individuare la regione del piano di Gauss luogo delle immagini dei complessi che soddisfano la disuguaglianza: 
+	\[
+	|z-i|\leq |z+2|
+	\]
+\end{esercizio}
+\textit{Soluzione}. Geometricamente, l'uguaglianza descrive l'asse del segmento di  estremi $A(-2,0)$ e $B(0,1)$.\\
+La disuguaglianza $|z-i|<|z+2|$ richiede di considerare anche i punti nel semipiano individuati dall'asse che sono più vicini a $(0,1)$. 
+
+\begin{esercizio}
+	Individuare la regione del piano di Gauss luogo delle immagini dei complessi che soddisfano la disuguaglianza: 
+	\[
+	|\sqrt{2}z+i|\leq |z-1|
+	\]
+\end{esercizio}
+\textit{Soluzione}. Posto $z=x+iy$:
+\begin{align*}
+	|\sqrt{2}z+i|\leq |z-1| \quad \Rightarrow \quad 
+	&|\sqrt{2} \, x+i(\sqrt{2}y+1)|\leq |(x-1)+iy|\\
+	&x^2+y^2+2\sqrt{2} y+2x\leq 0 
+	\quad \Rightarrow \quad 
+	\Gamma: \, (x+1)^2+(y+\sqrt{2})^2\leq 3
+\end{align*}
+Il luogo descritto è il disco chiuso di centro $C(-1, -\sqrt{2})$ e raggio $R=\sqrt{3}$. 
+
+\begin{esercizio}
+	Determinare i numeri complessi che soddisfano la relazione: 
+	\[
+	|z-1|+i|z|=|z-i|+i
+	\]
+\end{esercizio}
+\textit{Soluzione.} I complessi sono uguali se e sono se sono uguali tra loro rispettivamente le parti reali e quelle immaginarie: 
+\[
+\begin{cases}
+	|z-1|=|z-i|\\
+	|z|=1
+\end{cases}
+\]
+Il sistema può essere risolto geometricamente intersecando l'asse del segmento di estremi $A(1,0)$ e $B(0,1)$ con la circonferenza di centro l'origine e raggio unitario. Trattando le equazioni dal punto di vista della geometria analitica:
+\[
+\begin{cases}
+	y=x\\
+	x^2+y^2=1
+\end{cases}
+\Rightarrow \quad 
+\Big (\pm \frac{\sqrt{2}}{2}, \pm \frac{\sqrt{2}}{2}\Big )
+\]
+
+\begin{esercizio}
+	Determinare il luogo dei punti immagini delle soluzioni dell'equazione: 
+	\[
+	|\overline{z}-i| \cdot |z|=|\overline{z}-i|^2
+	\]
+\end{esercizio}
+\textit{Soluzione}. Si osserva che $\overline{z}=i$ è soluzione. \\
+Posto $z=-i$ una soluzione dell'equazione, è possibile semplificare il fattore comune: 
+\[
+|z|=|\overline{z}-i|
+\quad \Rightarrow \quad 
+|z|=|\overline{\overline{z}-i}|
+\quad \Rightarrow \quad 
+|z|=|z+i|
+\]
+L'uguaglianza descrive l'asse del segmento di estremi $A(0,0)$ e $B(0,-1)$: si tratta della retta $y=-1/2$.  
+
+\begin{esercizio}
+	Rappresentare nel piano di Gauss il luogo dei punti $z$ con la proprietà:
+	\[
+	\frac{\pi}{4}<\arg z<\frac{\pi}{2}
+	\]
+\end{esercizio}
+\textit{Soluzione.} Il luogo descritto è la regione di piano delimitata dalla bisettrice del primo-terzo quadrante e dal semiasse positivo delle $y$.\\
+Più in generale, posto $z=x+iy$, dalla relazione $\tan \theta=b/a$, si osserva che $\tan \theta$ può essere interpreto geometricamente come il coefficiente angolare della passante per $P(x,y)$ e per l'origine. 
+
+\begin{esercizio}
+	Calcolare modulo e argomenti dei numeri complessi: 
+	\[
+	z_1=(1-i)(-1+\sqrt{3} \, i)
+	\qquad 
+	z_2=\frac{-1+\sqrt{3} \, i}{1-i}
+	\qquad 
+	(1-i)^{1976}
+	\]
+\end{esercizio} 
+\textit{Soluzione}. 
+\begin{itemize}
+	\item $z_1$ è prodotto tra due numeri complessi che possono essere espressi in forma trigonometrica: 
+	\[
+	z_1=\Big (\sqrt{2}, -\frac{\pi}{4}\Big )\cdot \Big (2, \frac{2}{3} \, \pi)=\Big (2\sqrt{2}, -\frac{\pi}{4}+\frac{2}{3} \, \pi\Big )
+	=\Big (2\sqrt{2}, \frac{5}{12}\, \pi\Big )
+	\]
+	\item Analogamente per quanto riguarda $z_2$:
+	\[
+	z_2=\dfrac{\Big (2, \dfrac{2}{3} \, \pi \Big )}{\Big (\sqrt{2}, -\dfrac{\pi}{4}\Big )}=\Big (\sqrt{2}, \frac{2}{3} \, \pi +\frac{\pi}{4}\Big )=\Big (\sqrt{2}, \frac{11}{12} \, \pi \Big )
+	\]
+	\item La base $(1-i)$ viene espressa in forma trigonometria: 
+	\[
+	(1-i)=\Big (\sqrt{2}, -\frac{\pi}{4}\Big )
+	\]
+	Si ha: 
+	\[
+	(1-i)^{1976}=\Big (\sqrt{2}, -\frac{\pi}{4}\Big )^{1976}=\Big (\big (\sqrt{2}\big )^{1976}, 1976\cdot \Big (-\frac{\pi}{4}\Big ) \Big )=
+	\big (2^{988}, -494\pi \big ) \equiv \big (2^{988}, 0\big ) 
+	\]
+\end{itemize}
+
+\begin{esercizio}
+	Determinare modulo e argomento principale ($-\pi\leq \theta\leq \pi$) del numero complesso: 
+	\[
+	z=\frac{1}{1-i \, \tan \phi}
+	\qquad 
+		-\pi\leq \phi<\pi \quad , \quad 
+		\phi\neq \pm \pi/2
+	\]
+\end{esercizio}
+\textit{Soluzione.} Posto $z=\rho \, (\cos \theta+i\sin \theta)$:
+\begin{align*}
+	z&=\frac{1}{1-i \, \tan \phi}=\dfrac{1}{1-i \, \dfrac{\sin \phi}{\cos \phi}}=\frac{\cos \phi}{\cos \phi-i\sin \phi}
+	=\cos \phi \, (\cos \phi +i\ \sin \phi)
+	\end{align*}
+	Per esprimere $z$ in forma trigonometrica occorre rendere positivo il coefficiente contenete $\cos \phi$:
+	\begin{itemize} 
+		\item Se $\cos \phi>0$, cioè se $-\pi/2<\phi<\pi/2$:
+		\[
+		z=\cos \phi \, (\cos \phi +i\ \sin \phi)
+		\]
+		\item Se $\cos \phi<0$, cioè se $-\pi<\phi<-\pi/2$ o se $\pi/2<\phi<\pi$:
+		\[
+		z=-\cos \phi \, (-\cos \phi -i\ \sin \phi)=-\cos \phi \, \big (\cos (\pi+\phi)+i \, \sin (\pi+\phi)\big )
+		\]
+		\end{itemize} 
+Si osserva che $\pi+\phi$ non è un angolo principale e, quindi, occorre sfruttare la periodicità per esprimerlo nell'intervallo ammissibile: 
+\[
+\pi+\phi\equiv (\pi+\phi)-2\pi=\phi-\pi 
+\]
+Confrontando: 
+\begin{align*}
+	\rho &=\begin{cases} 
+		\cos \phi & \textrm{se $-\pi/2<\phi<\pi/2$}\\
+		-\cos \phi &\textrm{se $-\pi<\phi<-\pi/2$ o se $\pi/2<\phi<\pi$}
+\end{cases}
+\\
+\theta&=
+\begin{cases} 
+	\phi & \textrm{se $-\pi/2<\phi<\pi/2$}\\
+	\phi-\pi &\textrm{se $-\pi<\phi<-\pi/2$ o se $\pi/2<\phi<\pi$} 
+	\end{cases} 
+\end{align*}
+
+\begin{esercizio}
+	Risolvere l'equazione: 
+	\[
+	z^3=\overline{z}^2
+	\]
+\end{esercizio}
+\textit{Soluzione.} Sia $z=\rho \, (\cos \theta+i\sin \theta)$:
+\begin{align*}
+\rho^3 \, (\cos 3\theta+i\sin 3\theta)&=\rho^2 \, \big (\cos (-2\theta)+i\sin (-2\theta)\big )\\
+\end{align*}
+Uguagliando i termini omologhi: 
+\[
+\begin{cases}
+	\rho^3=\rho^2\\
+3\theta=-2\theta+k2\pi 	
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	\rho=1\\
+	\theta=k \, \dfrac{2\pi }{5} 
+\end{cases}
+\]
+Esistono sei soluzioni distinte, ottenute rispettivamente per $k=0,1,2,3,4,5$. 
+
+\begin{esercizio}
+	Risolvere nei naturali l'equazione: 
+	\[
+	(-\sqrt{3}+i)^n=4\, (1-i\sqrt{3})
+	\]
+\end{esercizio}
+\textit{Soluzione.} Si esprimono i due membri in forma trigonometrica: 
+\[
+\Big (2, \frac{5\pi}{6}\Big )^n=4 \, \Big (2, -\frac{\pi}{3}\Big )
+\quad \Rightarrow \quad 
+\Big (2^n, \frac{5n\pi}{6}\Big )=\Big (8, -\frac{\pi}{3}\Big )
+\]
+Si ha: 
+\[
+\begin{cases}
+	2^n=8\\[6pt]
+\dfrac{5n\pi}{6}=-\dfrac{\pi}{3}+k2\pi
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	n=3\\[6pt]
+	\dfrac{5}{2} \, \pi+\dfrac{\pi}{3}=k2\pi 
+\end{cases}
+\]
+Non esistono $k\in \mathbb{Z}$ che soddisfano la seconda equazione: 
+\[
+\forall \, k \in \mathbb{Z} \qquad 
+\frac{17}{6} \, \pi \neq k2\pi 
+\]
+
+\begin{esercizio}
+	Risolvere nei naturali l'equazione: 
+	\[
+	(-\sqrt{3}+i)^n=-8\, (1+i\sqrt{3})
+	\]
+\end{esercizio}
+\textit{Soluzione.} Si esprimono i due membri in forma trigonometrica: 
+\[
+\Big (2, \frac{5\pi}{6}\Big )^n=8 \, \Big (2, \frac{4\pi}{3}\Big )
+\quad \Rightarrow \quad 
+\Big (2^n, \frac{5n\pi}{6}\Big )=\Big (16, \frac{4\pi}{3}\Big )
+\]
+Si ha: 
+\[
+\begin{cases}
+	2^n=16\\[6pt]
+	\dfrac{5n\pi}{6}=\dfrac{4\pi}{3}+k2\pi
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	n=4\\[6pt]
+	\dfrac{10}{3} \, \pi-\dfrac{4\pi}{3}=k2\pi 
+\end{cases}
+\]
+Si risolve la seconda equazione ricercando una soluzione $k\in \mathbb{Z}$:
+\[
+\dfrac{10}{3} \, \pi-\dfrac{4\pi}{3}=k2\pi 
+\quad \Rightarrow \quad 
+2\pi=k2\pi \quad \Rightarrow \quad 
+k=1 \in \mathbb{Z}
+\]
+Si conclude che l'equazione ammette soluzione $n=4$. 
+
+\begin{esercizio}
+	Dato $\omega=-1+i\sqrt{3}$, determinare i complessi $z$ tali che $\omega z$ sia reale negativo. 
+\end{esercizio}
+\textit{Soluzione.} Si esprime $\omega$ in forma trigonometrica: 
+\[
+\omega=2 \, \Big (-\frac{1}{2}+\frac{\sqrt{3}}{2} \, i\Big )=\Big (2, \frac{2\pi}{3}\Big )
+\]
+Posto $z=(\rho, \theta)$:
+\[
+z\omega=\Big (2\rho, \frac{2\pi}{3}+\theta\Big)
+\]
+Si pongono le condizioni:
+\[
+\begin{cases}
+	\dfrac{2\pi}{3}+\theta=\pi+k2\pi \\[6pt]
+	\rho>0
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	\theta=\dfrac{\pi}{3}+k2\pi\\[6pt]
+	\rho>0
+\end{cases}
+\Rightarrow \quad 
+z=\rho \, \Big (\frac{1}{2}+\frac{\sqrt{3}}{2} \, i\Big )
+\]
+Geometricamente, le soluzioni descrivono la semiretta aperta nel primo quadrante, passante per l'origine e con inclinazione $\pi/3$ rispetto al semiasse positivo. 
+
+\begin{esercizio}
+	Si consideri il numero complesso: 
+	\[
+	\alpha=-\sqrt{3}-i
+	\]
+	Determinare i complessi $z$ tali che $\beta=z/\alpha$ abbiano immagini sulla retta di equazione $y=x/\sqrt{3}$.
+\end{esercizio}
+\textit{Soluzione.} Siano $z$ e $\alpha$ espressi in forma trigonometrica: 
+\[
+z=(\rho, \theta) \qquad \alpha=\Big (2, \frac{7\pi}{6}\Big )
+\]
+Si ha: 
+\[
+\beta=\frac{z}{\alpha}=\Big (\frac{\rho}{2}, \theta-\frac{7\pi}{6}\Big )
+\]
+Il numero $\beta$ ha immagine sulla retta se e solo se $\tan \beta=1/\sqrt{3}$, ossia se $\beta=\pi/6+k\pi$:
+\[
+\theta-\frac{7\pi}{6}=\frac{\pi}{6}+k\pi 
+\quad \Rightarrow \quad 
+\theta=\frac{4\pi }{3} +k\pi\equiv \frac{\pi}{3}+k\pi   
+\]
+Da cui: 
+\[
+z=\Big (\rho , \frac{\pi}{3}+k\pi\Big )
+\qquad \rho\geq 0
+\]
+Il luogo degli $z$ è la retta passante per l'origine e inclinata di $\frac{\pi}{3}$. 
+
+\begin{esercizio}
+	Applicare le formule di De Moivre per ricavare le formule di $\sin(n\theta)$ e di $\cos(n\theta)$: 
+\end{esercizio}
+\textit{Soluzione.} Applicando le formule di De Moivre: 
+\[
+(\cos \theta+i\sin \theta)^n=\cos(n\theta)+i\sin (n\theta)
+\]
+Applicando il binomio di Newton: 
+\[
+(\cos \theta+i\sin \theta)^n =\sum_{k=0}^n {n\choose k} \cos^{n-k} \theta\cdot i^{k} \, \sin^{k}\theta
+\]
+Si sfrutta la proprietà delle potenze di $i$ per uguagliare le componenti omologhe delle due espressioni: 
+\begin{align*}
+\cos(n\theta)&=\cos^n \theta-{n\choose 2}\cos^{n-2}\theta\cdot \sin^2\theta+
+{n\choose 4}\cos^{n-4}\theta\cdot \sin^4 \theta-\dots=\sum_{k=0}^{\lfloor n/2\rfloor} (-1)^k {n\choose 2k} \cos(\theta)^{n-2k}\sin(\theta)^{2k}\\
+\sin(n\theta)&={n\choose 1} \cos^{n-1}\theta\sin \theta-
+{n\choose 3} \cos^{n-3}\theta\sin^3 \theta+\dots=\sum_{k=0}^{\lfloor (n-1)/2\rfloor } (-1)^k {n\choose 2k+1} \cos(\theta)^{n-(2k+1)}\sin(\theta)^{2k+1}
+\end{align*}
+
+\begin{esercizio}
+	Calcolare le radici cubiche del numero complesso: 
+	\[
+	z=\frac{1}{(1+i)^2}
+	\]
+\end{esercizio}
+\textit{Soluzione.} Si esprime il numero complesso in forma trigonometrica: 
+\[
+(1+i)=\Big (\sqrt{2}, \frac{\pi}{4}\Big )
+\quad \Rightarrow \quad 
+(1+i)^{-2}=\Big (\frac{1}{2}, -\frac{\pi}{2}\Big )
+\]
+Si ha: 
+\[
+z_k=\sqrt[3]{\frac{1}{2}} \, \Big (\cos \Big (\frac{-\pi/2+k2\pi}{3}\Big )+i\sin \Big (\frac{-\pi/2+k2\pi}{3}\Big )\Big )
+\]
+Da cui le tre radici cubiche complesse: 
+\begin{align*}
+	z_0&=\sqrt[3]{\frac{1}{2}} \, \Big (\cos \Big (-\frac{\pi}{6}\Big )+i\sin \Big (-\frac{\pi}{6}\Big )\Big )=\frac{\sqrt{3}-i}{2\sqrt[3]{2}}\\
+	z_1&=\sqrt[3]{\frac{1}{2}} \, \Big (\cos \Big (-\frac{\pi}{6}+\frac{2\pi}{3}\Big )+i\sin \Big (-\frac{\pi}{6}+\frac{2\pi}{3}\Big )\Big )=\frac{i}{\sqrt[3]{2}}\\
+	z_2&=\sqrt[3]{\frac{1}{2}} \, \Big (\cos \Big (-\frac{\pi}{6}+\frac{4\pi}{3}\Big )+i\sin \Big (-\frac{\pi}{6}+\frac{4\pi}{3}\Big )\Big )=
+	-\frac{\sqrt{3}+i}{2\sqrt[3]{2}}
+\end{align*}
+Geometricamente, le intersezioni sono ai vertici di un triangolo equilatero avente un vertice $(0, 1/\sqrt[3]{2})$. 
