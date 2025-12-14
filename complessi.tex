@@ -402,4 +402,252 @@ Da cui le tre radici cubiche complesse:
 	z_2&=\sqrt[3]{\frac{1}{2}} \, \Big (\cos \Big (-\frac{\pi}{6}+\frac{4\pi}{3}\Big )+i\sin \Big (-\frac{\pi}{6}+\frac{4\pi}{3}\Big )\Big )=
 	-\frac{\sqrt{3}+i}{2\sqrt[3]{2}}
 \end{align*}
-Geometricamente, le intersezioni sono ai vertici di un triangolo equilatero avente un vertice $(0, 1/\sqrt[3]{2})$. 
+Geometricamente, le intersezioni sono ai vertici di un triangolo equilatero avente un vertice $(0, 1/\sqrt[3]{2})$. \\
+
+
+\begin{esercizio}
+	Calcolare: 
+	\[
+	z=\sqrt{\frac{\sqrt{3}-i}{\sqrt{3}+i}}
+	\]
+\end{esercizio}
+\textit{Soluzione.} 
+\[
+z=\sqrt{\frac{\sqrt{3}-i}{\sqrt{3}+i}}
+=\sqrt{\frac{(\sqrt{3}-i)^2}{4}}=\pm \frac{\sqrt{3}-i}{2}
+\]
+
+\begin{esercizio}
+	Scrivere in forma algebrica una delle radici quarte di $(1-2i)^2$. 
+\end{esercizio}
+\textit{Soluzione.} Si nota, in generale, che esistono esattamente $n$ radici $n$-esime di un numero complesso e che, per questo motivo, non è consentita alcuna eventuale operazione di semplificazione tra l'indice della radice e la l'esponente del radicando. \\
+Tuttavia in questo esercizio non si richiede di individuare tutte le radici e si osserva che una radice quarta di $(1-2i)^2$ coincide con una radice quadrata di $1-2i$:
+\[
+1-2i=\rho \, \big (\cos \theta+i\sin \theta) \quad 
+\Rightarrow \quad 
+\sqrt{1-2i}=\pm \sqrt{\rho} \, \left (\cos \Big (\frac{\theta+k2\pi}{2}\Big )+i\sin \Big (\frac{\theta+k2\pi}{2}\Big )\right ) 
+\qquad k=0,1
+\] 
+Osservando che $-\pi/2<\theta<0$, ossia $-\pi/4<\theta/2<0$:
+\[
+ \begin{cases}
+ 	\rho=\sqrt{5}\\
+	\cos \theta=\dfrac{1}{\sqrt{5}}\\[9pt]
+	\sin \theta=\dfrac{-2}{\sqrt{5}}
+\end{cases}
+\Rightarrow \quad 
+\begin{cases}
+	\rho=\sqrt{5}\\[6pt]
+	\cos \dfrac{\theta}{2}=\dfrac{1+1/\sqrt{5}}{2}=\dfrac{1}{\sqrt[4]{5}} \, \sqrt{\dfrac{\sqrt{5}+1}{2}}\\[9pt]
+	\sin \dfrac{\theta}{2}=-\sqrt{\dfrac{1-1/\sqrt{5}}{2}}=-\dfrac{1}{\sqrt[4]{5}} \, \sqrt{\dfrac{\sqrt{5}-1}{2}}
+\end{cases}
+\]
+Posto $k=0$:
+\[
+z_0=\sqrt{\frac{\sqrt{5}+1}{2}}-i \, \sqrt{\frac{\sqrt{5}-1}{2}}
+\]
+Le immagini delle restanti tre radici si trovano sulla circonferenza di raggio $\sqrt[4]{5}$ e sui vertici del quadrato avente un vertice in $z_0$. 
+
+\begin{esercizio}
+	Una delle radici quarte di un numero complesso $z$ risulta: 
+	\[
+	z_0=\cos 2 -i\sin 2
+	\]
+	Determinare le altre radici quarte di $z$. 
+\end{esercizio}
+\textit{Soluzione.} Le radici quarte del numero complesso sono rappresentate sul piano di Gauss ai vertici di un quadrato inscritto in una circonferenza di raggio uguale al modulo di una delle radici. \\
+In questo caso la circonferenza ha raggio unitario e per il calcolo delle restanti radici è sufficiente incrementare di volta in volta l'angolo di $\pi/2$. \\
+Occorre rappresentare $z_0$ in forma goniometrica: 
+\[
+z_0=\cos2-i\sin 2=1 \, \big (\cos(-2)+i\sin(-2)\big )
+\]
+Si ha:
+\[
+z_0=(1, -2)
+\quad \Rightarrow \quad 
+\begin{cases}
+z_1=\Big (1, -2+\dfrac{\pi}{2}\Big )=\sin 2+i\cos 2\\[6pt]
+z_2=(1, -2+\pi)=-\cos 2+i\sin 2\\[6pt]
+z_3=\Big (1, -2+\dfrac{3\pi}{2}\Big )=-\sin 2-i\cos 2
+\end{cases}
+\]
+
+\begin{esercizio}
+	Trovare le soluzioni della seguente equazione: 
+	\[
+	(-1+i)^3 z^3=1
+	\]
+\end{esercizio}
+\textit{Soluzione.} Risolvendo rispetto a $z$:
+\[
+z=\sqrt[3]{\frac{1}{(-1+i)^3}}
+\]
+I valori di $z$ si ottengono associando in tutti i modi possibili alle tre radici del numeratore le tre radici del denominatore. Dei nove valori trovati, solo tre sono tra loro distinti. Segue che le tre radici distinte si possono ottenere associando alle tre radici distinte del numeratore una sola, qualsiasi, radice del denominatore:
+\[
+z=\frac{\sqrt[3]{1}}{-1+i}
+\qquad \quad \sqrt[3]{1}=\Big (1, \frac{2k\pi}{3}\Big )
+=\begin{cases}
+	z_0=1\\
+	z_1=-\dfrac{1}{2}+\dfrac{\sqrt{3}}{2} \, i\\[6pt] 
+	z_2=-\dfrac{1}{2}-\dfrac{\sqrt{3}}{2} \, i
+\end{cases}
+%\qquad -1+i=\Big (\sqrt{2}, \frac{3\pi}{4}\Big )
+\]
+Si ha:
+\begin{align*}
+	z_0&=\frac{1}{-1+i}=\frac{1}{2} \, (-1-i)\\
+	z_1&=\dfrac{-1/2+i\sqrt{3}/2}{-1+i}=\dfrac{1+\sqrt{3}}{4}+i \, \dfrac{1-\sqrt{3}}{4}\\
+	z_2&=\dfrac{-1/2-i\sqrt{3}/2}{-1+i}=\dfrac{1-\sqrt{3}}{4}+i \, \dfrac{1+\sqrt{3}}{4}
+\end{align*}
+
+\begin{esercizio}
+	Interpretare geometricamente le soluzioni dell'equazione: 
+	\[
+	z^6+z^3+1=0
+	\]
+\end{esercizio}
+\textit{Soluzione.} Posto $t=z^3$:
+\[
+t^2+t+1=0 
+\quad \Rightarrow \quad 
+t=\frac{-1\pm i\sqrt{3}}{2}
+\quad \Rightarrow \quad 
+z=\sqrt[3]{\frac{-1\pm i\sqrt{3}}{2}}
+\]
+I due numeri complessi al radicando hanno modulo $1$ e argomenti $\pm 2\pi/3$. \\
+Segue che le rispettive radici cubiche hanno modulo $1$ e argomenti:\\
+\begin{center} 
+\begin{tabular}{lllll}
+	$\dfrac{2\pi}{9}$ & & $\dfrac{2\pi}{9}+\dfrac{2\pi}{3}$ & &  $\dfrac{2\pi}{9}+\dfrac{4\pi}{3}$\\[9pt]
+	$\dfrac{-2\pi}{9}$ & & $\dfrac{-2\pi}{9}+\dfrac{2\pi}{3}$ & &  $\dfrac{-2\pi}{9}+\dfrac{4\pi}{3}$\\
+\end{tabular}
+\end{center}
+Si osserva che le soluzioni ottenute sono a due a due coniugate, coerentemente con il fatto che l'equazione complessa è a coefficienti reali. 
+
+\begin{esercizio}
+	Risolvere l'equazione:
+	\[
+	p(z)=z^4+iz^3-(1-i)^6z-i(1-i)^6=0
+	\]
+\end{esercizio}
+\textit{Soluzione.} Si osserva che $z=-i$ è soluzione. Fattorizzando con il metodo di Ruffini si ottiene:
+\[
+p(z)=(z+i)\big (z^3-(1-i)^6\big )=0
+\]
+Si deduce che le radici dell'equazione sono $-i$ e le tre radici cubiche del numero $(1-i)^6$.
+Occorre quindi calcolare le tre radici cubiche. Si osserva che una risulta $(1-i)^2=-2i$. Le altre sono poste ai vertici del triangolo equilatero avente un vertice corrispondente a $-2i$ e inscritto in una circonferenza di raggio $2$:
+\[
+z_k=2 \, \left (\cos \Big (\frac{-\pi/2+k2\pi}{3}\Big )+i\sin \Big (\frac{-\pi/2+k2\pi}{3}\Big )\right )
+\]
+Da cui, oltre alle soluzioni $z_4=-i$ e $z_3=-2i$, si ha: 
+\begin{align*}
+&z_1=2 \, \Big (\cos \frac{\pi}{6}+i\sin \frac{\pi}{6}\Big )=\sqrt{3}+i
+&z_2=2 \, \Big (\cos \frac{5\pi}{6}+i\sin \frac{5\pi}{6}\Big )=-\sqrt{3}+i
+\end{align*}
+
+\begin{esercizio}
+	Risolvere in campo complesso la seguente equazione: 
+	\[
+	\sqrt[3]{z}=\sqrt{\sqrt{3}+i}
+	\]
+\end{esercizio}
+\textit{Soluzione.} L'equazione è in campo complesso: è possibile elevare entrambi i membri alla sesta potenza: 
+\[
+z^2=(\sqrt{3}+i)^3=8i
+\quad \Rightarrow \quad 
+z=\sqrt{8i}=2\sqrt{2} \cdot  \sqrt{i}=\pm \sqrt{8} \, \Big (\cos \frac{\pi}{4}+i\sin \frac{\pi}{4}\Big )=\pm 2 \, (1+i)
+\]
+Si osserva che l'operazione di elevamento è consentita in $\mathbb{C}$:
+\[
+\sqrt[3]{z}=\sqrt{\alpha} \quad \Leftrightarrow \quad 
+z=\big (\sqrt{\alpha}\big )^3=\sqrt{\alpha^3} \quad \Leftrightarrow \quad 
+z^2=\alpha^3
+\]
+In $\mathbb{R}$ invece l'elevamento non avrebbe portato a scritture equivalenti: 
+\[
+\sqrt[3]{x}=\sqrt{\alpha} \quad \Leftrightarrow \quad 
+x=\sqrt{\alpha^3} \quad \Rightarrow \quad 
+x^2=\alpha^3
+\]
+Infatti l'implicazione contraria non è soddisfatta: se $x^2=\alpha^3$, per ogni $x$ e con $\alpha\geq 0$, sarebbe falso $x=\sqrt{\alpha^3}$, per la non-negatività della radice quadrata. 
+
+\begin{esercizio}
+	Sia data la seguente equazione in $\mathbb{C}$:
+	\[
+	z^8=\frac{2|z|^2+\lambda}{2+|z|} \, |z|^7
+	\]
+	Determinare per quali valori di $\lambda\in \mathbb{R}^+$ esistono soluzioni. 
+\end{esercizio}
+\textit{Soluzione.} $z=0$ è soluzione per ogni $\lambda$. Si osserva inoltre che il secondo membro è un numero reale positivo per ogni $z$: la potenza ottava di $z$ è un numero reale positivo.\\
+Se $z$ è soluzione allora $|z|$ soddisfa l'uguaglianza: 
+\[
+|z|^8=\frac{2|z|^2+\lambda}{2+|z|} \, |z|^7
+\quad \Rightarrow \quad 
+|z|=0 \, \, \, \vee \, \, \, |z|=\frac{2|z|^2+\lambda}{2+|z|} 
+\quad \Rightarrow \quad 
+|z|^2-2|z|+\lambda=0
+\]
+Si ha: 
+\[
+|z|=1\pm \sqrt{1-\lambda}
+\]
+\begin{itemize}
+	\item Se $\lambda>1$ allora l'unica soluzione è quella banale $z=0$
+	\item Se $\lambda=1$ allora $|z|=1$. Sostituendo nell'equazione data:
+	\[
+	z^8=\frac{2+1}{2+1}=1
+	\]
+	Le soluzioni sono le $8$ radici dell'unità:
+	\[
+	z^8=1 
+	\quad \Rightarrow \quad 
+	z_k=\cos\frac{k\pi}{4}+i\sin \frac{k\pi}{4} \qquad 0\leq k<8
+	\]
+	\item Se $0<\lambda<1$: 
+	\[\rho_1:=|z_1|=1+\sqrt{1-\lambda} \qquad \quad 
+	\rho_2:=|z_2|=1-\sqrt{1-\lambda}
+	\]
+	Le soluzioni sono del tipo $z_1=\rho_1 u_1$ e $z_2=\rho_2 u_2$, dove $u_1, u_2$ sono complessi unimodulari.  \\
+	In quanto soluzioni, soddisfano l'equazione data:
+	\[
+	(\rho_1 u_1)^8=\frac{2\rho_1^2+\lambda}{2+\rho_1} \, \rho_1^7
+	\quad \Rightarrow \quad 
+	\rho_1^8 u_1^8=\frac{2\rho_1^2+\lambda}{2+\rho_1} \, \rho_1^7
+	\quad \Rightarrow \quad 
+	u_1^8=\frac{2\rho_1^2+\lambda}{\rho_1 \, (2+\rho_1)}
+	\]
+	Dall'uguaglianza precedente: 
+	\[
+	\rho_1^2-2\rho_1+\lambda=0 
+	\quad \Rightarrow \quad 
+	\begin{cases}
+		\rho_1^2=2\rho_1-\lambda\\[6pt]
+		\rho_1=\dfrac{\rho_1^2+\lambda}{2}
+	\end{cases}
+	\Rightarrow \quad 
+	\begin{cases}
+		\lambda=2\rho_1-\rho_1^2\\[6pt]
+		\rho_1=\dfrac{\rho_1^2+\lambda}{2}
+	\end{cases}
+	\]
+	Si ha: 
+	\[
+	u_1^8=\frac{2\rho_1^2+\lambda}{2\rho_1+\rho_1^2}=
+\frac{2\rho_1^2+(2\rho_1-\rho_1^2)}{2\rho_1+\rho_1^2}=1 \quad \Rightarrow \quad 
+u_1^8=1	
+	\]
+	Da cui si deducono otto soluzioni: 
+	\[
+	z=\rho_1 \sqrt[8]{1} 
+	\quad \Rightarrow \quad 
+	z_k=\rho_1 \, \Big (\cos \frac{k\pi}{4}+\sin \frac{k\pi}{4}\Big )
+	\qquad \quad 0\leq k<8
+	\]
+	In modo analogo nel caso di $\rho_2 u_2$:
+	\[
+	z=\rho_2 \sqrt[8]{1} 
+	\quad \Rightarrow \quad 
+	z_k=\rho_2 \, \Big (\cos \frac{k\pi}{4}+\sin \frac{k\pi}{4}\Big )
+	\qquad \quad 0\leq k<8
+	\]
+\end{itemize}
